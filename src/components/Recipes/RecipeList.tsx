@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { IRecipe } from '../../models/IRecipe';
 import jsonData from '../../resources/recipes.json';
-import Recipe from './Recipe';
+import RecipeCard from './RecipeCard';
 
 const RecipeList: React.FC = () => {
-  const recipes: Array<IRecipe> = JSON.parse(JSON.stringify(jsonData));
+  const [recipes, setRecipes] = useState<Array<IRecipe>>([]);
+
+  useEffect(() => {
+    const recipesJson: Array<IRecipe> = JSON.parse(JSON.stringify(jsonData));
+    setRecipes(recipesJson);
+  }, []);
 
   return (
     <>
       <h1>Liste de recettes</h1>
       <ul>
-        {recipes.map((recipe, index) => (
-          <Recipe
-            key={index}
+        {recipes.map((recipe) => (
+          <RecipeCard
+            id={recipe.id}
             name={recipe.name}
             ingredients={recipe.ingredients}
             instructions={recipe.instructions}

@@ -1,27 +1,43 @@
 [
   {
+    "id": "1",
     "name": "Poulet au curry",
     "ingredients": ["Poulet", "Curry", "Oignon"],
     "instructions": ["Faire cuire le poulet", "Faire cuire le curry", "Faire cuire l'oignon"],
     "coverImage" : "https://img.cuisineaz.com/610x610/2013/12/20/i48181-riz-blanc-a-la-sauce-au-poulet-et-curry.jpg",
     "imageGalery" : ["https://www.mesinspirationsculinaires.com/wp-content/uploads/2016/08/poulet-curry-recette-indienne-1-600x330.jpg", "https://www.etal-des-epices.com/wp-content/uploads/2021/04/recette-poulet-curry-madras-etal-des-epices.jpg"],
     "portions": 4,
-    "preparationTime": "20 min",
-    "cookingTime": "20 min",
-    "difficulty": "Facile",
+    "preparationTime": 20,
+    "cookingTime": 20,
+    "difficulty": "Difficile",
     "category": "Entrée",
     "protein": "Poulet"
   },
   {
+    "id": "2",
     "name": "Poulet au beurre",
     "ingredients": ["Poulet", "Beurre", "Oignon"],
     "instructions": ["Faire cuire le poulet", "Faire cuire le beurre", "Faire cuire l'oignon"],
     "coverImage" : "https://img.cuisineaz.com/610x610/2013/12/20/i48181-riz-blanc-a-la-sauce-au-poulet-et-curry.jpg",
     "imageGalery" : ["https://www.mesinspirationsculinaires.com/wp-content/uploads/2016/08/poulet-curry-recette-indienne-1-600x330.jpg", "https://www.etal-des-epices.com/wp-content/uploads/2021/04/recette-poulet-curry-madras-etal-des-epices.jpg"],
     "portions": 4,
-    "preparationTime": "20 min",
-    "cookingTime": "20 min",
+    "preparationTime": 20,
+    "cookingTime": 20,
     "difficulty": "Facile",
+    "category": "Entrée",
+    "protein": "Poulet"
+  },
+  {
+    "id": "2",
+    "name": "Poulet au citron",
+    "ingredients": ["Poulet", "Citron", "Oignon"],
+    "instructions": ["Faire cuire le poulet", "Faire cuire le citron", "Faire cuire l'oignon"],
+    "coverImage" : "https://img.cuisineaz.com/610x610/2013/12/20/i48181-riz-blanc-a-la-sauce-au-poulet-et-curry.jpg",
+    "imageGalery" : ["https://www.mesinspirationsculinaires.com/wp-content/uploads/2016/08/poulet-curry-recette-indienne-1-600x330.jpg", "https://www.etal-des-epices.com/wp-content/uploads/2021/04/recette-poulet-curry-madras-etal-des-epices.jpg"],
+    "portions": 4,
+    "preparationTime": 20,
+    "cookingTime": 20,
+    "difficulty": "Moyen",
     "category": "Entrée",
     "protein": "Poulet"
   }
