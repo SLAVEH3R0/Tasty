@@ -9,7 +9,7 @@ export interface IRecipe{
   preparationTime: number;
   cookingTime: number;
   difficulty: Difficulty;
-  categorie: Categorie[];
+  category: Category[];
   protein: Protein[];
 }
 
@@ -19,12 +19,12 @@ export enum Difficulty{
   Hard = 'Difficile'
 }
 
-export enum Categorie{
-  Favorites,
-  Vegetarian,
-  Apetizer,
-  Dessert,
-  MainCourse
+export enum Category{
+  Favorites = 'Favoris',
+  Vegetarian = 'Végétarien',
+  Apetizer = 'Entrée',
+  Dessert = 'Dessert',
+  MainCourse = 'Plat principal',
 }
 
 export enum Protein{

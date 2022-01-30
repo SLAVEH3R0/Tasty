@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { IRecipe } from '../../models/IRecipe';
 import jsonData from '../../resources/recipes.json';
+import { Container } from '../../styles/RecipeList.styles';
 import RecipeCard from './RecipeCard';
 
 const RecipeList: React.FC = () => {
@@ -14,9 +15,10 @@ const RecipeList: React.FC = () => {
   return (
     <>
       <h1>Liste de recettes</h1>
-      <ul>
+      <Container>
         {recipes.map((recipe) => (
           <RecipeCard
+            key={recipe.id}
             id={recipe.id}
             name={recipe.name}
             ingredients={recipe.ingredients}
@@ -27,11 +29,11 @@ const RecipeList: React.FC = () => {
             preparationTime={recipe.preparationTime}
             cookingTime={recipe.cookingTime}
             difficulty={recipe.difficulty}
-            categorie={recipe.categorie}
+            category={recipe.category}
             protein={recipe.protein}
           />
         ))}
-      </ul>
+      </Container>
     </>
   );
 };
