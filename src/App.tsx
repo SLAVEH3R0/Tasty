@@ -19,10 +19,14 @@ function App() {
         <Nav>
           <ul>
             <li>
-              <NavLink to="/">Acceuil</NavLink>
+              <NavLink end to="tasty">
+                Acceuil
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/list">Toutes les recettes</NavLink>
+              <NavLink end to="tasty/list">
+                Toutes les recettes
+              </NavLink>
             </li>
           </ul>
         </Nav>
@@ -30,8 +34,8 @@ function App() {
       <main>
         <Container>
           <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/list" element={<RecipeList />} />
+            <Route path="tasty" element={<Main />} />
+            <Route path="tasty/list" element={<RecipeList />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Container>

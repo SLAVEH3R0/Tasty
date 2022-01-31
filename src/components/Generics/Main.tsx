@@ -12,7 +12,7 @@ const Main: React.FC = () => {
           alt="Picture of Gordon Ramsay"
         />
         <h2>
-          🥓🥓 <a href="/List">Now let's cook</a> 🥓🥓
+          🥓🥓 <a href="tasty/list">Now let's cook</a> 🥓🥓
         </h2>
       </MainPage>
     </>
