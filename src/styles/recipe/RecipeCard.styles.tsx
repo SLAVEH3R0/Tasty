@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Category, Difficulty } from '../models/IRecipe';
+import { Category, Difficulty } from '../../models/IRecipe';
 
 interface IPropsDifficulty {
   difficultyLevel: Difficulty;

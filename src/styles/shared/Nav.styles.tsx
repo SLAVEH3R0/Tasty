@@ -5,6 +5,7 @@ export const Nav = styled.nav`
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   width: 100%;
   float: left;
+  margin-bottom: 10px;
 
   ul {
     list-style: none;

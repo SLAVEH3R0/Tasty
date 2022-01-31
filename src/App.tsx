@@ -19,7 +19,7 @@ function App() {
         <Nav>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">Acceuil</NavLink>
             </li>
             <li>
               <NavLink to="/list">Toutes les recettes</NavLink>

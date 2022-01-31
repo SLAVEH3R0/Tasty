@@ -1,13 +1,12 @@
 import React from 'react';
 import '../../css/RecipeCard.css';
 import { IRecipe } from '../../models/IRecipe';
-import '../../styles/RecipeCard.styles';
 import {
   Card,
   CardBody,
   CardHeader,
   Tag,
-} from '../../styles/RecipeCard.styles';
+} from '../../styles/recipe/RecipeCard.styles';
 
 const RecipeCard: React.FC<IRecipe> = ({
   name,

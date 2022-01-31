@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { IRecipe } from '../../models/IRecipe';
 import jsonData from '../../resources/recipes.json';
-import { Container } from '../../styles/RecipeList.styles';
+import { Container } from '../../styles/recipe/RecipeList.styles';
 import RecipeCard from './RecipeCard';
 
 const RecipeList: React.FC = () => {
