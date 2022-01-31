@@ -3,10 +3,12 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
   background-color: #d6eaf8;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  float: left;
 
   ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -14,6 +16,8 @@ export const Nav = styled.nav`
 
     li {
       display: block;
+      float: left;
+      width: auto;
 
       a {
         display: block;

@@ -14,6 +14,7 @@ export const Card = styled.div<IPropsDifficulty>`
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 20px;
+  width: 320px;
 
   ${(props) =>
     props.difficultyLevel == Difficulty.Easy &&
