@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
   width: 100%;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: 576px) {
     max-width: 540px;
