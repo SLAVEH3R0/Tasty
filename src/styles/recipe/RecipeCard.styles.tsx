@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Category, Difficulty } from '../../models/IRecipe';
+import { Category, Difficulty, Protein } from '../../models/IRecipe';
 
 interface IPropsDifficulty {
   difficultyLevel: Difficulty;
@@ -7,6 +7,10 @@ interface IPropsDifficulty {
 
 interface IPropsCategory {
   category: Category;
+}
+
+interface IPropsProtein {
+  protein: Protein;
 }
 
 export const Card = styled.div<IPropsDifficulty>`
@@ -20,16 +24,31 @@ export const Card = styled.div<IPropsDifficulty>`
     props.difficultyLevel == Difficulty.Easy &&
     css`
       box-shadow: 0 2px 20px rgba(165, 220, 150, 0.8);
+
+      h1 {
+        font-size: 1.5rem;
+        color: rgba(110, 220, 80, 0.8);
+      }
     `};
   ${(props) =>
     props.difficultyLevel == Difficulty.Medium &&
     css`
       box-shadow: 0 2px 20px rgba(220, 180, 130, 0.8);
+
+      h1 {
+        font-size: 1.5rem;
+        color: rgba(220, 150, 65, 0.8);
+      }
     `};
   ${(props) =>
     props.difficultyLevel == Difficulty.Hard &&
     css`
       box-shadow: 0 3px 30px rgba(220, 150, 150, 0.8);
+
+      h1 {
+        font-size: 1.5rem;
+        color: rgba(220, 65, 65, 0.8);
+      }
     `};
 `;
 
@@ -50,14 +69,24 @@ export const CardBody = styled.div`
   padding: 20px;
   min-height: 250px;
 
+  div.name-prot {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    span {
+      margin: auto;
+    }
+  }
+
   p {
     font-size: 13px;
-    margin: 0 0 40px;
   }
 `;
 
 export const Tag = styled.span<IPropsCategory>`
   background: #cccccc;
+  border: 1px solid #000;
   border-radius: 50px;
   font-size: 12px;
   margin: 0 2px 0 0;
@@ -76,4 +105,10 @@ export const Tag = styled.span<IPropsCategory>`
     css`
       background-color: green;
     `};
+`;
+
+export const ProteinTag = styled.span`
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 2px;
 `;

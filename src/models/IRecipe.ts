@@ -28,12 +28,12 @@ export enum Category{
 }
 
 export enum Protein{
-  Fish,
-  Chicken,
-  Pork,
-  Beef,
-  Seafood,
-  Eggs,
-  Tofu,
-  Other
+  Fish = 'Poisson',
+  Chicken = 'Poulet',
+  Pork = 'Porc',
+  Beef = 'Boeuf',
+  Seafood = 'Fruits de mer',
+  Eggs = 'Oeufs',
+  Tofu = 'Tofu',
+  Other = 'Autre',
 }
